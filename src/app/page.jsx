@@ -4,6 +4,7 @@ import Carosuel from "./components/Carosuel";
 import { Typewriter } from "react-simple-typewriter";
 import Loader from "./components/Loader";
 import Map from "./components/Map";
+import MissionVision from "./components/MissionVision";
 
 export default function Home() {
   const [random, setRandom] = useState(1);
@@ -45,6 +46,10 @@ export default function Home() {
                     <p className="hidden md:block">At Aspire Engineers, we believe in building long-term relationships based on trust, transparency, and performance. Our experienced team is driven by a passion for engineering excellence and is committed to delivering solutions that meet the evolving needs of our clients.</p>
                   </div>
                 </div>
+              </div>
+              <hr className="w-4/5 mx-auto my-3 text-zinc-300" />
+              <div>
+                <MissionVision/>
               </div>
               <hr className="w-4/5 mx-auto my-3 text-zinc-300" />
               <div>

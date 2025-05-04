@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import Loader from '../components/Loader'
+import MissionVision from '../components/MissionVision';
 
 function page() {
   const [loader, setLoader] = useState(true);
@@ -39,6 +40,9 @@ function page() {
                 <p>At Aspire Engineers, we believe in building long-term relationships rooted in trust, transparency, and performance. Our experienced team is driven by a passion for engineering excellence and remains committed to delivering tailored solutions that meet the evolving needs of our clients.</p>
               </div>
             </div>
+
+            <hr className="w-4/5 mx-auto my-3 text-zinc-300" />
+            <MissionVision/>
           </div>
       }
 
