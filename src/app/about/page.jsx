@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Loader from '../components/Loader'
 import MissionVision from '../components/MissionVision';
+import Slidebar from '../components/Slidebar';
 
 function page() {
   const [loader, setLoader] = useState(true);
@@ -43,6 +44,16 @@ function page() {
 
             <hr className="w-4/5 mx-auto my-3 text-zinc-300" />
             <MissionVision/>
+
+            <hr className="w-4/5 mx-auto my-3 text-zinc-300" />
+
+              {/* SERVICES */}
+              <div className="w-full my-5">
+                <div className="w-9/10 md:w-8/10 mx-auto text-center">
+                  <div className="text-xl md:text-3xl font-bold">OUR <span className="text-[#e83433]">SERVICES</span></div>
+                  <Slidebar/>
+                </div>
+              </div>
           </div>
       }
 

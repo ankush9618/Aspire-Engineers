@@ -52,9 +52,11 @@ function MissionVision() {
 
             </div>
 
-            <div className='md:hidden font-serif w-full'>
+
+{/* //Mobile view */}
+            <div className='md:hidden font-serif w-full text-zinc-600'>
                 <div className='flex w-9/10 mx-auto gap-2'>
-                    <img src="/assets/images/mission.jpg" className='w-30 rounded-md' alt="" />
+                    <img src="/assets/images/mission.jpg" className='w-30 rounded-md border-1 border-zinc-300' alt="" />
                     <div className='text-center w-full'>
                     <p className='font-semibold'>OUR <span className='text-[#e83433]'>VISION</span></p>
                     <p className='text-[9px] text-start'>To be recognized as a national leader in engineering services — setting benchmarks in technical excellence, client satisfaction, and safety standards. We envision Aspire Engineers Pvt. Ltd. as the go-to partner for complex infrastructure and electrical projects, driving progress across India through integrity, innovation, and a relentless pursuit of excellence.</p>
@@ -65,10 +67,10 @@ function MissionVision() {
                     <p className='font-semibold'>OUR <span className='text-[#e83433]'>MISSION</span></p>
                     <p className='text-[9px] text-start'>To provide comprehensive, cutting-edge engineering solutions that exceed client expectations in quality, safety, and efficiency. We aim to empower industries and infrastructure through our specialized expertise in electrical testing, servicing, and project execution. Our mission is to build long-term partnerships by delivering reliable, innovative, and value-driven services with a commitment to sustainable development and community impact.</p>
                     </div>
-                    <img src="/assets/images/vission.jpg" className='w-30 rounded-md' alt="" />
+                    <img src="/assets/images/vission.jpg" className='w-30 rounded-md border-1 border-zinc-300' alt="" />
                 </div>
                 <div className='flex w-9/10 mx-auto gap-2'>
-                    <img src="/assets/images/mission.jpg" className='w-30 rounded-md' alt="" />
+                    <img src="/assets/images/mission.jpg" className='w-30 rounded-md border-1 border-zinc-300' alt="" />
                     <div className='text-center w-full'>
                     <p className='font-semibold'>CORE <span className='text-[#e83433]'>VALUES</span></p>
                     <div className='text-[8px] text-start'>

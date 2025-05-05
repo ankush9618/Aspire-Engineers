@@ -17,7 +17,7 @@ function Footer() {
                                 </div>
                             </div>
                         </NavLink>
-                        <p className='hidden md:block text-sm'>
+                        <p className='hidden md:block text-sm mt-3'>
                         <span className='font-bold'>Aspire Engineers Pvt. Ltd.</span> has been a trusted engineering partner for over <span className='text-[#e83433]'>10 years</span>, delivering quality, safety, and innovation across Telangana, Andhra Pradesh, and Bhubaneswar. We proudly serve some of India’s most prestigious institutions and corporations.
                         </p>
                     </div>
