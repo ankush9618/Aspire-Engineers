@@ -8,7 +8,7 @@ import { MdOutlineExpandLess } from "react-icons/md";
 
 import React, { useState } from 'react'
 import Link from "next/link";
-import NavLink from "./NavLink";
+import NavLink from "../utils/NavLink";
 
 function Navbar() {
 
@@ -60,8 +60,9 @@ function Navbar() {
                                         SERVICES
                                     </div>
                                     <div className="hidden group-hover:block absolute top-5 pt-9 bg-white w-40 cursor-pointer">
-                                        <ul><li className=" border-y-1 border-zinc-300 p-2 hover:text-yellow-500">ACB/VCB Service</li>
-                                            <li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">RetroFitting</li>
+                                        <ul>
+                                            <NavLink href="/services#acb"><li className=" border-y-1 border-zinc-300 p-2 hover:text-yellow-500">ACB/VCB Service</li></NavLink>
+                                            <NavLink href="/services/#retro"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">RetroFitting</li></NavLink>
                                             <li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">24*7 Service</li>
                                             
                                         </ul>

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Loader from '../components/Loader'
 import MissionVision from '../components/MissionVision';
-import Slidebar from '../components/Slidebar';
+import Slidebar from '../utils/Slidebar';
 
 function page() {
   const [loader, setLoader] = useState(true);
@@ -18,7 +18,7 @@ function page() {
         loader ? <Loader /> :
           <div className='w-full'>
             <div className='h-auto md:h-96'>
-              <img src="/assets/images/carousal1.jpg" alt="" className='h-full w-full hover:opacity-80' />
+              <img src="/assets/images/carousal1.jpg" alt="" className='h-full w-full hover:opacity-100 opacity-80 border-1 border-zinc-300 shadow-md' />
             </div>
             <div className='text-center font-bold text-xl md:text-3xl my-5'>ABOUT <span className='text-[#e83433]'>US</span></div>
             <div className='md:flex md:w-8/10 w-9/10 mx-auto justify-center gap-4 items-center'>

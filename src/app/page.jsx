@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 import Loader from "./components/Loader";
 import Map from "./components/Map";
 import MissionVision from "./components/MissionVision";
-import Slidebar from "./components/Slidebar";
+import Slidebar from "./utils/Slidebar";
 
 export default function Home() {
   const [random, setRandom] = useState(1);

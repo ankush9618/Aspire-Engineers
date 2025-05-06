@@ -16,12 +16,11 @@ function Carosuel() {
   }, [])
 
   return (
-
     <>
       
       <div className=' md:h-108 h-64 bg-zinc-500 relative w-full'>
         <div className=' h-full'>
-          <img src={`/assets/images/carousal${random}.jpg`} className='size-full opacity-50' alt="" />
+          <img src={`/assets/images/carousal${random}.jpg`} className='size-full opacity-50 border-1 border-zinc-300 shadow-md' alt="" />
           <div className='absolute  md:top-3 md:right-5 top-2 right-2 rounded-sm md:rounded-md bg-white overflow-hidden'>
             <p className='text-center md:text-sm text-zinc-500 hidden md:block md:font-bold pt-1'>Authorised Service Center</p>
           <img src="/assets/images/landt2.jpg" className=' w-25 md:w-60' alt="L&T" />
