@@ -61,8 +61,8 @@ function Navbar() {
                                     </div>
                                     <div className="hidden group-hover:block absolute top-5 pt-9 bg-white w-40 cursor-pointer">
                                         <ul>
-                                            <NavLink href="/services#acb"><li className=" border-y-1 border-zinc-300 p-2 hover:text-yellow-500">ACB/VCB Service</li></NavLink>
-                                            <NavLink href="/services/#retro"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">RetroFitting</li></NavLink>
+                                            <NavLink href="/services#amc"><li className=" border-y-1 border-zinc-300 p-2 hover:text-yellow-500">ACB/VCB Service</li></NavLink>
+                                            <NavLink href="/services/#acb"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">RetroFitting</li></NavLink>
                                             <li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">24*7 Service</li>
                                             
                                         </ul>
@@ -116,8 +116,8 @@ function Navbar() {
                                 serExp &&
                                 <li className="px-4">
                                     <ul className="flex flex-col gap-2 text-zinc-600">
-                                        <li className=" border-b-1 border-zinc-300 p-2" onClick={()=>setMenu(!menu)}>ACB/VCB Service</li>
-                                        <li className=" border-b-1 border-zinc-300 p-2" onClick={()=>setMenu(!menu)}>RetroFitting</li>
+                                        <NavLink href="/services#amc"><li className=" border-b-1 border-zinc-300 p-2" onClick={()=>setMenu(!menu)}>AMC</li></NavLink>
+                                        <NavLink href="/services#acb"><li className=" border-b-1 border-zinc-300 p-2" onClick={()=>setMenu(!menu)}>ACB/VCB Servicing</li></NavLink>
                                         <li className=" border-b-1 border-zinc-300 p-2" onClick={()=>setMenu(!menu)}>24*7 Service</li>
                                     </ul>
                                 </li>
