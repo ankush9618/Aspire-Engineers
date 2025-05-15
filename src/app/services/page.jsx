@@ -9,7 +9,7 @@ function page() {
         <div id='amc' className='h-auto w-full scroll-mt-36 md:scroll-mt-50'>
           <div className='text-xl md:text-3xl text-center text-[#e83433] font-bold mb-3 md:mb-5'>ANNUAL MAINTAINANCE CONTRACT (AMC)</div>
           <div className=' hidden md:flex justify-center items-center gap-4'>
-            <img src="/assets/images/carousal1.jpg" alt="" className='w-30 md:w-80 border-1 border-zinc-300 shadow-md rounded-md' />
+            <img src="/assets/carousal/carousal1.jpg" alt="" className='w-30 md:w-80 border-1 border-zinc-300 shadow-md rounded-md' />
             <p className=''>We offer predictable, scheduled maintenance support designed to proactively identify and address potential issues before they lead to system failures. This minimizes unexpected downtime, ensures optimal equipment performance, and extends the overall lifespan of your systems. Our expert team follows a structured maintenance plan tailored to your needs, promoting operational efficiency, safety, and long-term cost savings.
             </p>
           </div>
@@ -155,6 +155,7 @@ function page() {
             </div>
           </div>
 
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScoLP8Hy7yV17v8wv9bQBFR18XJxXulf3B32pBG0w1vi_ICPQ/viewform?usp=dialog" className='w-full h-300' frameBorder="0"></iframe>
         </div>
       </div>
     </div>

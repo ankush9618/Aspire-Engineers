@@ -71,7 +71,7 @@ function Navbar() {
                                     </div>
 
                                 </li>
-                                <li className="hover:text-yellow-500 cursor-pointer">CONTACT</li>
+                                <NavLink href="contact"><li className="hover:text-yellow-500 cursor-pointer">CONTACT</li></NavLink>
                             </ul>
                         </div>
                     </div>
@@ -125,7 +125,7 @@ function Navbar() {
                                     </ul>
                                 </li>
                             }
-                            <li className=" border-b-1 border-zinc-400 p-2 mb-5" onClick={() => setMenu(!menu)}>CONTACT</li>
+                            <NavLink href="contact"><li className=" border-b-1 border-zinc-400 p-2 mb-5" onClick={() => setMenu(!menu)}>CONTACT</li></NavLink>
                         </ul>
 
                         <img src="/assets/images/landt2.jpg" className="w-30 mx-auto" alt="" />

@@ -6,6 +6,7 @@ import Loader from "./components/Loader";
 import Map from "./components/Map";
 import MissionVision from "./components/MissionVision";
 import Slidebar from "./utils/Slidebar";
+import RateUs from "./utils/RateUs";
 
 export default function Home() {
   const [random, setRandom] = useState(1);
@@ -76,6 +77,7 @@ export default function Home() {
                 <Map />
               </div>
 
+              <RateUs/>
             </div>
         }
       </div>
