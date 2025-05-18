@@ -62,7 +62,7 @@ function Navbar() {
                                     </div>
                                     <div className="hidden group-hover:block absolute top-5 pt-9 bg-white w-40 cursor-pointer">
                                         <ul>
-                                             <NavLink href="/services/amc"><li className=" border-y-1 border-zinc-300 p-2 hover:text-yellow-500">PCC</li></NavLink>
+                                             <NavLink href="/services/amc"><li className=" border-y-1 border-zinc-300 p-2 hover:text-yellow-500">AMC</li></NavLink>
                                             <NavLink href="/services#acb"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">ACB/VCB Service</li></NavLink>
                                             <NavLink href="/services#pfc"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">Power Factor Corr.</li></NavLink>
                                             <li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">24*7 Service</li>

@@ -1,11 +1,9 @@
 import ContactForm from '../utils/ContactForm'
-
 function page() {
 
   return (
     <div>
             <ContactForm/>
-        
         
     </div>
   )
