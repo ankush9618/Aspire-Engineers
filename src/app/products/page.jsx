@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>Main page</div>
+    <div className='min-h-screen flex justify-center items-center'>Comming Soon...</div>
   )
 }
 

@@ -6,16 +6,9 @@ import MissionVision from '../components/MissionVision';
 import Slidebar from '../utils/Slidebar';
 
 function page() {
-  const [loader, setLoader] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader(false)
-    }, 2000)
-  }, [])
   return (
     <>
-      {
-        loader ? <Loader /> :
+      
           <div className='w-full'>
             <div className='h-auto md:h-96'>
               <img src="/assets/carousal/carousal1.jpg" alt="" className='h-full w-full hover:opacity-100 opacity-80 border-1 border-zinc-300 shadow-md' />
@@ -55,7 +48,7 @@ function page() {
                 </div>
               </div>
           </div>
-      }
+      
 
     </>
   )
