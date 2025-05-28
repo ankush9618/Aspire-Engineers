@@ -44,9 +44,9 @@ function Navbar() {
                                     <div className="hover:text-yellow-500 cursor-pointer">
                                         <NavLink href="/products">PRODUCTS</NavLink>
                                     </div>
-                                    <div className="hidden group-hover:block absolute top-5 pt-9 bg-white w-40 cursor-pointer">
-                                        <ul>
-                                            <NavLink href="/products/pcc"><li className=" border-y-1 border-zinc-300 p-2 hover:text-yellow-500">PCC</li></NavLink>
+                                    <div className="hidden group-hover:block absolute top-5 pt-5 bg-white w-40 cursor-pointer">
+                                        <ul className="bg-[#1d4f68] text-white border-t-2 border-yellow-500">
+                                            <NavLink href="/products/pcc"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">PCC</li></NavLink>
                                             <NavLink href="/products/mcc"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">MCC</li></NavLink>
                                             <NavLink href="/products/pdb-panel"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">PDB Panel</li></NavLink>
                                             <NavLink href="/products/apfc-panel"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">APFC Panel</li></NavLink>
@@ -60,26 +60,30 @@ function Navbar() {
                                         <NavLink href="/services">SERVICES</NavLink>
                                         
                                     </div>
-                                    <div className="hidden group-hover:block absolute top-5 pt-9 bg-white w-40 cursor-pointer">
-                                        <ul>
-                                             <NavLink href="/services/amc"><li className=" border-y-1 border-zinc-300 p-2 hover:text-yellow-500">AMC</li></NavLink>
-                                            <NavLink href="/services#acb"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">ACB/VCB Service</li></NavLink>
-                                            <NavLink href="/services#pfc"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">Power Factor Corr.</li></NavLink>
+                                    <div className="hidden group-hover:block hover:duration-2000 absolute top-5  pt-5 w-56 cursor-pointer  px-1 text-white">
+                                            <ul className="px-1 bg-[#1d4f68] border-t-2 border-yellow-500">
+                                             <NavLink href="/services/amc"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">AMC</li></NavLink>
+                                            <NavLink href="/services/acb_vcb"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">ACB/VCB Service</li></NavLink>
+                                            <NavLink href="/services/pfc"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">Power Factor Corr.</li></NavLink>
+                                            <li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">Harmonic Analysis & Mitigation</li>
+                                            <li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">Calibration Services</li>
+                                            <NavLink href="/services/amc1"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">AMC</li></NavLink>
+                                            <NavLink href="/services/acb_vcb1"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">ACB/VCB Service</li></NavLink>
+                                            <NavLink href="/services/pfc1"><li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">Power Factor Corr.</li></NavLink>
                                             <li className=" border-b-1 border-zinc-300 p-2 hover:text-yellow-500">24*7 Service</li>
-
-
                                         </ul>
+                                        
+                                        
                                     </div>
 
                                 </li>
-                                <NavLink href="contact"><li className="hover:text-yellow-500 cursor-pointer">CONTACT</li></NavLink>
+                                <NavLink href="/contact"><li className="hover:text-yellow-500 cursor-pointer">CONTACT</li></NavLink>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
             {/* mobile view */}
-
             <nav className='h-20 sticky bg-white w-full flex justify-between top-0 left-0 items-center pr-5 pl-3 z-200 md:hidden border-b-2 border-gray-300 shadow-sm'>
                 <Link href="/"><div className="text-xl font-bold text-zinc-900 flex justify-center items-center gap-1 cursor-pointer" onClick={() => setMenu(false)}>
                     <img src="/assets/images/logoicon1.png" className="size-14 mix-blend-multiply outline-0 opacity-90" alt="" />
@@ -93,7 +97,6 @@ function Navbar() {
                     {menu ? <IoClose className="text-4xl font-bold" /> : <TiThMenu />}
                 </div>
             </nav>
-
             {
                 menu &&
                 <nav className=" min-h-screen h-auto w-full inset-0 sticky top-16 bg-white md:hidden z-100">
@@ -119,9 +122,9 @@ function Navbar() {
                                 serExp &&
                                 <li className="px-4">
                                     <ul className="flex flex-col gap-2 text-zinc-600">
-                                        <NavLink href="/services#amc"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>AMC</li></NavLink>
-                                        <NavLink href="/services#acb"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>ACB/VCB Servicing</li></NavLink>
-                                        <NavLink href="/services#pfc"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>Power Factor Correction</li></NavLink>
+                                        <NavLink href="/services/amc"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>AMC</li></NavLink>
+                                        <NavLink href="/services/acb_vcb"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>ACB/VCB Servicing</li></NavLink>
+                                        <NavLink href="/services/pfc"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>Power Factor Correction</li></NavLink>
                                         <li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>24*7 Service</li>
                                     </ul>
                                 </li>
