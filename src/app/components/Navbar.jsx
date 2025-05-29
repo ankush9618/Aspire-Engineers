@@ -125,6 +125,7 @@ function Navbar() {
                                         <NavLink href="/services/amc"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>AMC</li></NavLink>
                                         <NavLink href="/services/acb_vcb"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>ACB/VCB Servicing</li></NavLink>
                                         <NavLink href="/services/pfc"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>Power Factor Correction</li></NavLink>
+                                        <NavLink href="/services/#amc"><li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>All Services</li></NavLink>
                                         <li className=" border-b-1 border-zinc-300 p-2" onClick={() => setMenu(!menu)}>24*7 Service</li>
                                     </ul>
                                 </li>

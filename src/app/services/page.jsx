@@ -7,10 +7,9 @@ import Link from 'next/link'
 function page() {
   return (
     <>
-      <div>
         <div className='font-serif md:flex justify-center w-9/10 md:w-7/10 mx-auto mt-5 md:mt-10 gap-4 text-zinc-600'>
-          <div className=''>
-            <div className='amc'>
+          <div className='allServices'>
+            <div id='amc' className='amc h-auto w-full scroll-mt-36 md:scroll-mt-50 scroll-smooth'>
               <div className='text-xl md:text-3xl text-center text-[#e83433] font-bold mb-3 md:mb-5'>ANNUAL MAINTAINANCE CONTRACT (AMC)</div>
               <div className=' hidden md:flex justify-center items-center gap-4'>
                 <img src="/assets/carousal/carousal1.jpg" alt="" className='w-30 md:w-80 border-1 border-zinc-300 shadow-md rounded-md' />
@@ -158,8 +157,24 @@ function page() {
               </div>
             </div>
           </div>
+          <div id="otherServices" className='mx-auto w-9/10 md:hidden'>
+            <ul className=' gap-1 flex flex-col mt-2 font-sm text-yellow-500'>
+                    <p className='text-nowrap underline font-semibold text-xl text-start text-zinc-600'>Other Services</p>
+                    <li className='hover:text-[#e83433] cursor-pointer'><Link href="#amc">AMC</Link></li>
+                    <li className='hover:text-[#e83433] cursor-pointer'><Link href="#acb_vcb">ACB/VCB Servicing</Link></li>
+                    <li className='hover:text-[#e83433] cursor-pointer'><Link href="#pfc">Power Factor Correction</Link></li>
+                    <li className='hover:text-[#e83433] cursor-pointer'>Harmonic Analysis & Mitigation</li>
+                    <li className='hover:text-[#e83433] cursor-pointer'>Calibration Services</li>
+                    <li className='hover:text-[#e83433] cursor-pointer'>Relay and Meter Testing</li>
+                    <li className='hover:text-[#e83433] cursor-pointer'>Energy Monitoring Systems</li>
+                    <li className='hover:text-[#e83433] cursor-pointer'>VFD Programming and Communication</li>
+                    <li className='hover:text-[#e83433] cursor-pointer'>Retrofitting Services</li>
+                    <li className='hover:text-[#e83433] cursor-pointer'>Spares Replacement</li>
+                    <li className='hover:text-[#e83433] cursor-pointer'>24x7 Support</li>
+                  </ul>
+          </div>
         </div>
-      </div>
+
     </>
   )
 }
