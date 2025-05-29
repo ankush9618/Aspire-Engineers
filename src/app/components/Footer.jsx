@@ -1,6 +1,5 @@
 import React from 'react'
 import NavLink from '../utils/NavLink'
-import Link from 'next/link'
 
 function Footer() {
     return (
@@ -32,9 +31,9 @@ function Footer() {
                                 <p className='text-nowrap font-semibold text-xl text-start text-[#1d4f68]'>OUR <span className='text-[#e83433]'>SERVICES</span></p>
                                 <div className='flex justify-center gap-8 text-sm md:text-base'>
                                     <ul className=' gap-1 flex flex-col mt-2 font-sm text-yellow-500 list-disc'>
-                                        <li className='hover:text-[#e83433] cursor-pointer'><Link href="services/amc">AMC</Link></li>
-                                        <li className='hover:text-[#e83433] cursor-pointer'><Link href="services/acb_vcb">ACB/VCB Servicing</Link></li>
-                                        <li className='hover:text-[#e83433] cursor-pointer'><Link href="services/pfc">Power Factor Correction</Link></li>
+                                        <li className='hover:text-[#e83433] cursor-pointer'><NavLink href="/services/amc">AMC</NavLink></li>
+                                        <li className='hover:text-[#e83433] cursor-pointer'><NavLink href="/services/acb_vcb">ACB/VCB Servicing</NavLink></li>
+                                        <li className='hover:text-[#e83433] cursor-pointer'><NavLink href="/services/pfc">Power Factor Correction</NavLink></li>
                                         <li className='hover:text-[#e83433] cursor-pointer'>Harmonic Analysis & Mitigation</li>
                                         <li className='hover:text-[#e83433] cursor-pointer'>Calibration Services</li>
                                         <li className='hover:text-[#e83433] cursor-pointer'>Relay and Meter Testing</li>
@@ -58,9 +57,9 @@ function Footer() {
                                 <p className='text-nowrap text-center font-semibold text-xl md:text-start text-[#1d4f68]'>OUR <span className='text-[#e83433]'>PRODUCTS</span></p>
                                 <div className='flex justify-center gap-8 text-sm md:text-base'>
                                     <ul className=' gap-1 flex flex-col mt-2 font-sm text-yellow-500 list-disc'>
-                                        <li className='hover:text-[#e83433] cursor-pointer'><Link href="/services/amc">PCC</Link></li>
-                                        <li className='hover:text-[#e83433] cursor-pointer'><Link href="/services/acb_vcb">MCC</Link></li>
-                                        <li className='hover:text-[#e83433] cursor-pointer'><Link href="/services/pfc">PDB Panel</Link></li>
+                                        <li className='hover:text-[#e83433] cursor-pointer'><NavLink href="/services/amc">PCC</NavLink></li>
+                                        <li className='hover:text-[#e83433] cursor-pointer'><NavLink href="/services/acb_vcb">MCC</NavLink></li>
+                                        <li className='hover:text-[#e83433] cursor-pointer'><NavLink href="/services/pfc">PDB Panel</NavLink></li>
                                         <li className='hover:text-[#e83433] cursor-pointer'>APFC Panel</li>
                                         <li className='hover:text-[#e83433] cursor-pointer'>Distribution Board</li>
                                     </ul>
